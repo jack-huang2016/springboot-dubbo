@@ -9,7 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- 因为api模块中只需要提供接口，所以只需要新建一个普通的maven项目即可（New—>project..—>maven），该模块不需要新建为Springboot项目 -->
+    <!-- 因为api模块中只需要提供接口，所以只需要新建一个普通的maven项目即可（New—>project..—>maven），该模块不需要新建为Springboot项目。
+    并且实际项目中是需要将提供服务的接口单独放置在一个模块或者工程下的，这样在消费端直接引用该接口模块，
+    这样就可以脱离服务提供者（如果把提供服务的接口与实现都放在服务提供方的模块内，消费端就必须得引用服务提供方，这样是不太友好的）。-->
     <artifactId>api</artifactId>
 
 </project>
